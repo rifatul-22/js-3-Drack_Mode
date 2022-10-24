@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primaryColor: #1dd1a1;
+}
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: var(--primaryColor);
+   position: relative;
+}
+.container .from{
+   background: #fff;
+   padding: 50px;
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.container .from h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-left: 15px solid var(--primaryColor);
+    padding-left: 10px;
+    line-height: 1em;
+    transition: 0.5s;
+    color: #333;
+}
+.container .from input{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #444;
+    position: relative;
+}
+.container .from .input_box #password{
+    position: relative;
+}
+.container .from .input_box #password_check{
+    position: absolute;
+    top: 330px;
+    left: -140px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.container .from .input_box p{
+    margin-left: 35px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.container .from .input_box #btn{
+    background: var(--primaryColor);
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    cursor: pointer;
+}
+.container .colors{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .colors span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--clr);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .colors span.active{
+    border: 2px solid #333;
+    scale: 1.5;
+}

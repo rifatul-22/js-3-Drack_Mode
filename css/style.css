@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primaryColor: rgb(248, 178, 47);
+    --secondaryColor: #fff;
+    --textColor: #000;
+    --formColor: #fff;
+    --slide: aqua;
+    --menuColor: #111
+}
+body.darkMode{
+    --primaryColor: rgb(248, 178, 47);
+    --secondaryColor: #fff;
+    --textColor: #fff;
+    --formColor: #111;
+    --slide: #111;
+
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+body.darkMode{
+    background: #111;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+#slide_menu{
+    width: 250px;
+    height: 100%;
+    background: var(--slide);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: -250px;
+    padding: 50px;
+    transition: 0.6s;
+    z-index: 999999;
+}
+#slide_menu.active{
+    margin-right: 0px;
+}
+#slide_menu ul{
+    text-transform: capitalize;
+}
+#slide_menu ul li{
+    padding: 20px 0;
+}
+#slide_menu ul li a{
+    text-decoration: none;
+    color: var(--menuColor);
+    font-weight: 700;
+    background: var(--secondaryColor);
+    padding: 10px 35px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+#slide_menu ul li a:hover{
+    background: brown;
+    color: var(--secondaryColor);
+}
+#slide_menu .icone{
+    margin-top: 20px;
+}
+#slide_menu .icone a{
+    padding: 0 8px;
+    font-size: 18px;
+    color: var(--secondaryColor);
+}
+nav{
+    background: var(--primaryColor);
+    margin-bottom: 15px;
+}
+nav .row{
+    align-items: center;
+}
+nav .logo{
+    width: 20%;
+}
+nav .manu{
+    width: 80%;
+}
+/* nav .logo img{
+    display: block;
+    max-width: 100%;
+} */
+nav .manu ul{
+    display: flex;
+    justify-content: center;
+}
+nav .manu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondaryColor);
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+nav .manu ul li #logIn:hover{
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#banner .banner_content{
+    width: 60%;
+}
+#banner .banner_img{
+    width: 40%;
+}
+#banner .banner_content h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    color: var(--textColor);
+}
+#banner .banner_content p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--textColor);
+}
+#banner .banner_content button{
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-radius: 5px;
+}
+#banner .banner_img img{
+    width: 100%;
+    border-radius: 10px;
+}
+#service{
+    padding: 100px 0;
+}
+#service .service_iteam{
+   width: 25%;
+   text-align: center;
+}
+#service .service_iteam i{
+    font-size: 30px;
+    color: var(--primaryColor);
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+#service .service_iteam h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--textColor);
+}
+#service .service_iteam p{
+    width: 220px;
+    margin: auto;
+    line-height: 1.5;
+    color: var(--textColor);
+}
+#contact{
+    margin-bottom: 100px;
+}
+#contact .contact_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    background: var(--formColor);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.9);
+    width: 400px;
+    padding: 50px;
+}
+/* #contact .contact_form .input_box{
+    
+} */
+#contact .contact_form input{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+}
+#contact .contact_form .input_box #password{
+    position: relative;
+}
+#contact .contact_form .input_box i{
+    position: absolute;
+    top: 1082px;
+    left: 800px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact .contact_form .input_box #btn{
+    background: var(--primaryColor);
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
